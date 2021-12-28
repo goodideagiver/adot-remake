@@ -47,11 +47,9 @@
 }
 
 .gallery .enabled {
-  width: 100%;
-  height: auto;
+  height: 100%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   -webkit-filter: none;
           filter: none;
-  border: none;
 }

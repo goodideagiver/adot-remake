@@ -5,8 +5,8 @@
 }
 
 .main-h > header > * {
-  -webkit-box-shadow: var(--bor), var(--ssh);
-          box-shadow: var(--bor), var(--ssh);
+  -webkit-box-shadow: var(--bor);
+          box-shadow: var(--bor);
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33%;
           flex: 1 1 33%;

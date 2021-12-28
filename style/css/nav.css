@@ -16,7 +16,21 @@
 }
 
 .main-nav > a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 8%;
+          flex: 0 1 8%;
+  text-align: center;
   padding: 15px;
   -webkit-box-shadow: var(--bor) inset;
           box-shadow: var(--bor) inset;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.main-nav > a:hover {
+  background-color: black;
+  color: white;
 }

@@ -8,4 +8,7 @@ gallimg.forEach(galimage => {
 function galleryenabler(clickede) {
     console.log('Clicked' + clickede)
     clickede.classList.toggle("enabled");
+    setTimeout(() => {
+        clickede.scrollIntoView(true);
+    }, 500);
 }

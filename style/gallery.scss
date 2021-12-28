@@ -11,8 +11,26 @@
     }
     .images {
         display: flex;
+        flex-wrap: wrap;
         >* {
-            flex: 1 1 25%;
+            flex: 1 2 5%;
+            width: 5%;
+            height: 500px;
+            object-fit: cover;
+            border: 1px solid black;
+            filter: grayscale(1) opacity(0.5);
+            transition: 1s;
+            &:hover {                
+                filter: none;
+                cursor: pointer;
+            }
         }
+    }
+    .enabled {
+        width: 100%;
+        height: auto;
+        flex-basis: 100%;
+        filter: none;
+        border: none;
     }
 }

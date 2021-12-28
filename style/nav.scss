@@ -11,14 +11,18 @@
         flex: 0 1 8%;
         text-align: center;
         padding: 15px;
-        box-shadow: var(--bor) inset;
+        
         color: black;
         font-weight: bold;
         text-decoration: none;
-        transition: .1s;
+        //transition: .2s;
         &:hover {
-            background-color: black;
-            color: white;
+            //background-color: black;
+            //color: white;
+            //transform: scale(0.95);
+            //color: orange;
+            box-shadow: var(--bor) inset;
+            //box-shadow: var(--ssh);
         }
     }
 }

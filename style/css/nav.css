@@ -21,16 +21,12 @@
           flex: 0 1 8%;
   text-align: center;
   padding: 15px;
-  -webkit-box-shadow: var(--bor) inset;
-          box-shadow: var(--bor) inset;
   color: black;
   font-weight: bold;
   text-decoration: none;
-  -webkit-transition: .1s;
-  transition: .1s;
 }
 
 .main-nav > a:hover {
-  background-color: black;
-  color: white;
+  -webkit-box-shadow: var(--bor) inset;
+          box-shadow: var(--bor) inset;
 }

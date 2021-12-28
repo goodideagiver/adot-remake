@@ -45,18 +45,28 @@
 			content="Order digital art, animation or even real paintings! The best art your money can buy. "
 		/>
 		<meta property="twitter:image" content="img/gallery/maglena.jpg" />
-		<style>
-			body {
-				background: url("img/noise.png"),
-					linear-gradient(to right, rgb(107, 1, 1), rgb(184, 78, 255));
-			}
-		</style>
+		<link rel="stylesheet" href="style/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
 	</head>
 	<body>
-		<section>
-			<nav></nav>
+        <nav class="main-nav">
+            <a href="http://">Home</a>
+            <a href="http://">Prices</a>
+            <a href="http://">Gallery</a>
+            <a href="http://">About</a>
+            <a href="http://">Contact</a>
+        </nav>
+		<section class="main-h">
 			<header>
-				<h1></h1>
+				<aside></aside>
+				<main>
+                    <h1>ADOT</h1>
+                    <p>Digital artist</p>
+                </main>
+				<aside></aside>
 			</header>
 		</section>
 		<main>
@@ -66,6 +76,8 @@
 		</main>
 		<footer></footer>
 	</body>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
 	<!-- https://github.com/verlok/vanilla-lazyload#-recipes -->
+	<script src="script/header.js"></script>
 </html>

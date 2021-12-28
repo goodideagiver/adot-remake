@@ -1,0 +1,14 @@
+.main-h {
+    >header {
+        display: flex;
+        >* {
+            box-shadow: var(--bor),var(--ssh);
+            flex:1 1 33%;
+            padding: 5%;
+            text-align: center;
+        }
+        >main {
+            flex-basis: 75%;
+        }
+    }
+}

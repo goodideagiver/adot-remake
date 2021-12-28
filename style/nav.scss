@@ -1,0 +1,14 @@
+.main-nav {
+    box-shadow: var(--bor),var(--ssh);
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+    justify-content: right;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    >a {
+        padding: 15px;
+        box-shadow: var(--bor) inset;
+    }
+}

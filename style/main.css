@@ -2,8 +2,25 @@
 @import url(css/reset.css);
 @import url(css/min/header.min.css);
 @import url(css/min/nav.min.css);
+@import url(css/min/about.min.css);
+@import url(css/min/gallery.min.css);
 
 :root {
     --bor: black 0 0 0 2px;
     --ssh: 0px 1px 0px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 48px rgba(17,17,26,0.1);
+    --line: black solid 2px;
+}
+
+body {
+    background: url("../img/noise.png");
+}
+
+.col2 {
+    display: flex;
+    max-width: 1800px;
+    margin: auto;    
+}
+
+.col2 > * {
+    flex-basis: 50%;
 }

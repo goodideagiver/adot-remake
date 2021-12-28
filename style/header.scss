@@ -1,14 +1,21 @@
 .main-h {
     >header {
         display: flex;
-        >* {
-            box-shadow: var(--bor);
-            flex:1 1 33%;
-            padding: 5%;
+        border-bottom: var(--line);
+        >* {            
+            flex:1 1 0%;
+            padding: 5% 0;
             text-align: center;
+            
         }
         >main {
-            flex-basis: 75%;
+            flex-basis: 100%;
+            max-width: 1800px;      
+            border-left: var(--line);      
+            border-right: var(--line);      
+        } 
+        h1 {
+            font-size: 3rem;
         }
     }
 }

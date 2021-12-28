@@ -1,13 +1,22 @@
 .main-nav {
-    box-shadow: var(--bor),var(--ssh);
+    box-shadow: var(--ssh);
     display: flex;
-    padding: 5px;
-    gap: 5px;
-    justify-content: right;
-    background-color: white;
+    justify-content: space-between;
+    background-image: url("../img/noise.png"),linear-gradient(to right,white,white);
+    border-bottom: var(--line);
     position: sticky;
     top: 0;
-    >a {
+    padding: 5px 20px;
+    .title {
+        display: flex;
+        align-items: center;
+    }
+    .links {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    a {
         flex: 0 1 8%;
         text-align: center;
         padding: 15px;

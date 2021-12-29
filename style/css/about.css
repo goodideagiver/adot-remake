@@ -9,6 +9,8 @@
           align-items: center;
   overflow: hidden;
   max-width: 1500px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5e7c6b), to(#c272d44d));
+  background: linear-gradient(#ff5e7c6b, #c272d44d);
 }
 
 .about img {

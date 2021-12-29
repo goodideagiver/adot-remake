@@ -83,15 +83,14 @@ header.sectionheader {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 20px;
   font-size: 1.5rem;
   border-bottom: var(--line);
-  -webkit-box-shadow: var(--ssh);
-          box-shadow: var(--ssh);
+  -webkit-box-shadow: var(--ssh), inset rgba(0, 0, 0, 0.287) 0 0 20px;
+          box-shadow: var(--ssh), inset rgba(0, 0, 0, 0.287) 0 0 20px;
   border: 2px black solid;
+  background: -webkit-gradient(linear, left top, right top, from(#ff5e7c4d), to(#c272d426));
+  background: linear-gradient(to right, #ff5e7c4d, #c272d426);
 }
 
 header.sectionheader p {

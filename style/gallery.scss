@@ -65,12 +65,13 @@ header.sectionheader {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    //align-items: center;
     padding: 20px;
     font-size: 1.5rem;        
     border-bottom: var(--line);
-    box-shadow: var(--ssh);
+    box-shadow: var(--ssh),inset rgba(0, 0, 0, 0.287) 0 0 20px;
     border: 2px black solid;
+    background: linear-gradient(to right,#ff5e7c4d, #c272d426);
     p {
         opacity: 0.5;
         font-size: 1rem;

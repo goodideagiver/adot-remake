@@ -97,3 +97,9 @@ header.sectionheader p {
   opacity: 0.5;
   font-size: 1rem;
 }
+
+header.sectionheader > * {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}

@@ -12,8 +12,8 @@
             object-fit: cover;
             border: 1px solid black;
             filter: grayscale(1) opacity(0.5);
-            //transition: 1s;
-            &:hover {                
+            transition: .4s;
+            &:hover {              
                 filter: none;
                 cursor: pointer;
             }

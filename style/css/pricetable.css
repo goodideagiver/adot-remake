@@ -13,7 +13,9 @@
   max-width: 1500px;
   margin: auto;
   border: 1px solid black;
-  margin: 30px auto;
+  margin: 40px auto;
+  -webkit-box-shadow: var(--ssh);
+          box-shadow: var(--ssh);
 }
 
 .pricetable > div {

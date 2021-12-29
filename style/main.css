@@ -18,7 +18,6 @@ body {
 
 .col2 {
     display: flex;
-    max-width: 1800px;
     margin: auto;    
 }
 

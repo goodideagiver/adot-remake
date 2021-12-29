@@ -8,7 +8,7 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  max-width: 1500px !important;
+  max-width: 1500px;
 }
 
 .about img {
@@ -45,7 +45,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -61,4 +61,5 @@
 
 .about .text > h2 {
   width: 100%;
+  font-size: 1.5;
 }

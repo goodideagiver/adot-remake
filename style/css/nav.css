@@ -52,3 +52,9 @@
   -webkit-box-shadow: var(--bor) inset;
           box-shadow: var(--bor) inset;
 }
+
+@media (max-width: 400px) {
+  .links {
+    display: none;
+  }
+}

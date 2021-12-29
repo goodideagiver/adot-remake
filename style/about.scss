@@ -13,6 +13,7 @@
     flex-wrap: wrap;
     align-items: center;
     overflow: hidden;
+    max-width: 1500px !important;
     >div {
         flex-grow: 1;
         min-width: 300px;

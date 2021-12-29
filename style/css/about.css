@@ -8,6 +8,7 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  max-width: 1500px !important;
 }
 
 .about img {

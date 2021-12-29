@@ -22,6 +22,7 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   min-width: 300px;
+  max-height: 70vh;
 }
 
 .about .text {

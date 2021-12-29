@@ -15,7 +15,7 @@ function galleryenabler(clickede) {
         });
         clickede.classList.add("enabled");
         setTimeout(() => {
-            clickede.scrollIntoView(true);
+            clickede.scrollIntoView({block: "center",behavior: "smooth"});
         }, 500);
     }
 }

@@ -26,7 +26,7 @@
 }
 
 .about .text {
-  padding: 30px 20px;
+  padding: 30px 40px;
   gap: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,6 +42,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   border-right: 1px solid black;
+  font-size: 1.5rem;
 }
 
 .about .text > h2 {

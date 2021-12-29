@@ -17,13 +17,14 @@
         min-width: 300px;
     }
     .text {
-        padding: 30px 20px;
+        padding: 30px 40px;
         gap: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         border-right: 1px solid black;
+        font-size: 1.5rem;
         >h2 {
             width: 100%;
         }

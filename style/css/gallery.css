@@ -24,8 +24,8 @@
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid black;
-  -webkit-filter: grayscale(1) opacity(0.5);
-          filter: grayscale(1) opacity(0.5);
+  -webkit-filter: grayscale(0.8) opacity(0.5);
+          filter: grayscale(0.8) opacity(0.5);
   -webkit-transition: .4s;
   transition: .4s;
 }

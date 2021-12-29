@@ -71,8 +71,8 @@
   min-width: 100px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: grayscale(1) opacity(0.8);
-          filter: grayscale(1) opacity(0.8);
+  -webkit-filter: grayscale(0.8) opacity(0.8);
+          filter: grayscale(0.8) opacity(0.8);
   -webkit-transition: 0.2s;
   transition: 0.2s;
   -webkit-transition-delay: .1s;

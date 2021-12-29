@@ -13,7 +13,7 @@
             max-height: 50vh;
             object-fit: cover;
             border: 1px solid black;
-            filter: grayscale(1) opacity(0.5);
+            filter: grayscale(0.8) opacity(0.5);
             transition: .4s;
             &:hover {              
                 filter: none;

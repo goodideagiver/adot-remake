@@ -17,7 +17,7 @@ const gallimg = document.querySelectorAll('.images img');
 gallContainer = document.createElement("div");
 gallContainer.classList.add("lightbox");
 gallimg.forEach(element => {
-    gallContainer.appendChild(element.cloneNode(element));
+    gallContainer.appendChild(element.cloneNode(true));
     //console.log(element);
 });
 //console.log(gallContainer)

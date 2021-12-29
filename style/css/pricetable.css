@@ -38,6 +38,8 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .pricetable > div > div {
@@ -69,11 +71,19 @@
      object-fit: cover;
   -webkit-filter: grayscale(1) opacity(0.8);
           filter: grayscale(1) opacity(0.8);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
-.pricetable > div img:hover {
+.pricetable > div:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  background-color: white;
+}
+
+.pricetable > div:hover img {
   -webkit-filter: none;
           filter: none;
 }

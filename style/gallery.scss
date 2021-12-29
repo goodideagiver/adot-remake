@@ -1,14 +1,4 @@
 .gallery {
-    >header {
-        border-top: var(--line);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        font-size: 2rem;        
-        border-bottom: var(--line);
-        box-shadow: var(--ssh);
-    }
     .images {
         display: flex;
         justify-content: center;
@@ -46,4 +36,15 @@
             filter: grayscale(0.5);
         }
     }
+}
+
+header.sectionheader {
+    border-top: var(--line);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 2rem;        
+    border-bottom: var(--line);
+    box-shadow: var(--ssh);
 }

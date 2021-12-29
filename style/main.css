@@ -13,7 +13,7 @@
 }
 
 body {
-    background: url("../img/noise.png");
+    background: url("../img/noise.png"),#f14fce36;
 }
 
 .col2 {

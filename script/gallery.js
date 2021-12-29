@@ -1,5 +1,5 @@
 const gallimg = document.querySelectorAll('.images img');
-console.log(gallimg);
+//console.log(gallimg);
 
 gallimg.forEach(galimage => {
     galimage.addEventListener('click',() => galleryenabler(galimage));
@@ -7,8 +7,15 @@ gallimg.forEach(galimage => {
 
 function galleryenabler(clickede) {
     console.log('Clicked' + clickede)
-    clickede.classList.toggle("enabled");
-    setTimeout(() => {
-        clickede.scrollIntoView(true);
-    }, 500);
+    if (clickede.classList.contains("enabled")) {
+        clickede.classList.remove("enabled");
+    } else {
+        gallimg.forEach(element => {
+            element.classList.remove("enabled");
+        });
+        clickede.classList.add("enabled");
+        setTimeout(() => {
+            clickede.scrollIntoView(true);
+        }, 500);
+    }
 }

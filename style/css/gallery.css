@@ -1,3 +1,7 @@
+.gallery {
+  overflow: hidden;
+}
+
 .gallery .images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,6 +91,7 @@ header.sectionheader {
   border-bottom: var(--line);
   -webkit-box-shadow: var(--ssh);
           box-shadow: var(--ssh);
+  border: 2px black solid;
 }
 
 header.sectionheader p {

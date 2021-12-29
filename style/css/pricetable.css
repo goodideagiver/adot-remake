@@ -12,7 +12,8 @@
           align-items: center;
   max-width: 1500px;
   margin: auto;
-  border: 0px black solid;
+  border: 1px black solid;
+  border-style: none solid none solid;
   margin: -1px auto;
 }
 

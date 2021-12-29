@@ -26,6 +26,8 @@
           flex-grow: 1;
   min-width: 300px;
   max-height: 70vh;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
 
 .about .text {
@@ -49,7 +51,9 @@
   height: -moz-fit-content;
   height: fit-content;
   max-height: none;
-  min-width: 600px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 .about .text p {

@@ -18,7 +18,7 @@
         flex-grow: 1;
         min-width: 300px;
         max-height: 70vh;
-    }
+        flex-shrink: 1;    }
     .text {
         padding: 30px 40px;
         gap: 20px;
@@ -30,7 +30,8 @@
         font-size: 1.5rem;
         height: fit-content;
         max-height: none;
-        min-width: 600px;
+        flex-grow: 2;
+        //min-width: 600px;
         p {
             width: 100%;
         }

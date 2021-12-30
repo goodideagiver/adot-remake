@@ -13,7 +13,8 @@
 }
 
 .rules ul li {
-  margin: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
   font-size: 1.1rem;
   font-weight: bold;

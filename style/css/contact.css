@@ -81,6 +81,15 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5px;
+  -webkit-transform: perspective(1500px) rotateY(15deg) scale(0.95);
+          transform: perspective(1500px) rotateY(15deg) scale(0.95);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.contact .link-wrapper:hover {
+  -webkit-transform: none;
+          transform: none;
 }
 
 .contact .link-wrapper a {
@@ -126,30 +135,27 @@
 
 .contact .link-wrapper a:hover::before {
   visibility: visible;
-  -webkit-transform: scale(5);
-          transform: scale(5);
+  -webkit-transform: scale(2);
+          transform: scale(2);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 1;
-  width: 100%;
 }
 
 .contact .link-wrapper a::before {
   visibility: hidden;
   content: '';
-  width: 50px;
-  height: 50px;
+  height: 300%;
+  width: 100%;
   border-radius: 50%;
-  aspect-ratio: 1/1;
   -webkit-transform: scale(0.1);
           transform: scale(0.1);
-  top: 30px;
-  left: 50%;
+  top: -50%;
+  left: 0;
   background-color: white;
   background: -webkit-gradient(linear, left top, right top, from(#c8485d), to(#9797ff));
   background: linear-gradient(to right, #c8485d, #9797ff);
   position: absolute;
-  margin-left: -25px;
 }
 
 .contact .link-wrapper a * {

@@ -31,8 +31,8 @@
           justify-content: center;
   position: relative;
   overflow: hidden;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .design ol li:nth-child(2) {
@@ -46,7 +46,7 @@
 }
 
 .design ol li::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -61,10 +61,10 @@
           transform-origin: 0 0;
   -webkit-transform: translateX(-100%) skewX(-45deg);
           transform: translateX(-100%) skewX(-45deg);
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .design ol li:hover {

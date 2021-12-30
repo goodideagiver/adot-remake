@@ -53,6 +53,7 @@
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+  overflow-y: auto;
 }
 
 .about .text p {

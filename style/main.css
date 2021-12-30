@@ -8,6 +8,7 @@
 @import url(css/min/contact.min.css);
 @import url(css/min/footer.min.css);
 @import url(css/min/design.min.css);
+@import url(css/min/rules.min.css);
 
 :root {
     --bor: black 0 0 0 2px;

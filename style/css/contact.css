@@ -68,8 +68,83 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact .link-wrapper a span, .contact .link-wrapper a i {
+  position: relative;
+  z-index: 2;
+}
+
+.contact .link-wrapper a:hover {
+  -webkit-box-shadow: var(--ssh);
+          box-shadow: var(--ssh);
+  color: black;
+}
+
+.contact .link-wrapper a:hover i {
+  -webkit-animation: arrow-move 1s infinite;
+          animation: arrow-move 1s infinite;
+}
+
+.contact .link-wrapper a:hover::before {
+  visibility: visible;
+  -webkit-transform: scale(10);
+          transform: scale(10);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.contact .link-wrapper a::before {
+  visibility: hidden;
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  aspect-ratio: 1/1;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  top: 50px;
+  left: 50%;
+  background-color: white;
+  position: absolute;
+  margin-left: -25px;
 }
 
 .contact .link-wrapper a * {
   display: block;
+}
+
+@-webkit-keyframes arrow-move {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  50% {
+    -webkit-transform: translate(5px);
+            transform: translate(5px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes arrow-move {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  50% {
+    -webkit-transform: translate(5px);
+            transform: translate(5px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }

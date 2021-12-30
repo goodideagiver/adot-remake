@@ -5,6 +5,7 @@
 @import url(css/min/about.min.css);
 @import url(css/min/gallery.min.css);
 @import url(css/min/pricetable.min.css);
+@import url(css/min/contact.min.css);
 
 :root {
     --bor: black 0 0 0 2px;

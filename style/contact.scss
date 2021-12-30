@@ -1,0 +1,50 @@
+.contact {
+    border: 2px black solid;
+    border-style: none solid;
+    padding: 5vh 0;
+    max-width: 1500px;
+    margin: auto;
+    .contact-wrapper {
+        border: 2px black solid;
+        border-style: solid none;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+    }
+    .contact-box {
+        flex: 1 1 70%;
+        //min-width: 400px;
+        border: 4px solid black;
+        //border-radius: 25px;
+        padding: 25px 15px;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .link-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        a {
+            background-color: black;
+            //border-radius: 8px;
+            color: white;
+            font-size: 1.5rem;
+            padding: 5px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            gap: 15px;
+            justify-content: space-between;
+            * {
+                display: block;
+            }
+        }
+    }
+}

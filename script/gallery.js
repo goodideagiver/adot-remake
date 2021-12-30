@@ -13,16 +13,15 @@
 //     }
 // }
 
-const gallimg = document.querySelectorAll('.images img');
+const gallimg = document.querySelectorAll(".images img");
 gallContainer = document.createElement("div");
 gallContainer.classList.add("lightbox");
-gallimg.forEach(element => {
-    gallContainer.appendChild(element.cloneNode(true));
-    //console.log(element);
+gallimg.forEach((element) => {
+	gallContainer.appendChild(element.cloneNode(true));
+	//console.log(element);
 });
 //console.log(gallContainer)
 
-gallimg.forEach(galimage => {
-    galimage.addEventListener('click',() => showGallery(galimage));
+gallimg.forEach((galimage) => {
+	galimage.addEventListener("click", () => showGallery(galimage));
 });
-

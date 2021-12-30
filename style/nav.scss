@@ -52,16 +52,6 @@
             font-size: 2rem;
             padding: 0 5px;
             transition: 0.3s;
-            &:hover {
-                .fa-hamburger {
-                    display: none;
-                }
-                .fa-bacon {
-                    display: unset;
-                    color: red;
-                }
-                transform: rotate(360deg) scale(0.9);
-            }
         }
         .mobile-nav {
             position: absolute;
@@ -82,7 +72,17 @@
             visibility: visible;
             opacity: 1;
         }
+        .fa-hamburger {
+            animation: 5s hamburger infinite;
+        }
     }
+}
+
+@keyframes hamburger {
+    0% {transform: scale(1);}
+    10% {transform: scale(1.1);}
+    20% {transform: scale(1);}
+    100% {transform: scale(1);}
 }
 
 @media (min-width:500px) {
@@ -94,4 +94,15 @@
             display: none;
         }
     }
+}
+
+.eaten {
+    .fa-hamburger {
+        display: none;
+    }
+    .fa-bacon {
+        display: unset;
+        color: red;
+    }
+    transform: rotate(360deg) scale(0.9);
 }

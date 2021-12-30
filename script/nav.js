@@ -8,4 +8,5 @@ hamburger.addEventListener("click", mobileMenuToggle);
 
 function mobileMenuToggle() {
 	mobileNav.classList.toggle("list-toggle");
+    hamburger.classList.toggle("eaten");
 }

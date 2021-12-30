@@ -96,6 +96,7 @@
   .main-nav .fa-hamburger {
     -webkit-animation: 5s hamburger infinite;
             animation: 5s hamburger infinite;
+    color: black;
   }
 }
 

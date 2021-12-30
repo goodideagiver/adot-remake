@@ -23,6 +23,28 @@
                 color: rgba(0, 0, 0, 0.568);
                 font-size: 1.2rem;
             }
+            position: relative;
+            overflow: hidden;
+            transition: .2s;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0; left: 0;
+                width: 130%; height: 100%;
+                background: #ffffff54;
+                background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+                box-shadow: var(--ssh);
+                z-index: -1;
+                transform-origin:0 0 ;
+                transform:translateX(-100%) skewX(-45deg);
+                transition: transform .4s;
+            }
+            &:hover {
+                color: white;
+                &::before {
+                    transform: translateX(0) skewX(-45deg);
+                }
+            }
         }
     }
 }

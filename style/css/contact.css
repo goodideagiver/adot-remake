@@ -80,8 +80,8 @@
 }
 
 .contact .link-wrapper a:hover {
-  -webkit-box-shadow: var(--ssh);
-          box-shadow: var(--ssh);
+  -webkit-box-shadow: var(--ssh), var(--ssh);
+          box-shadow: var(--ssh), var(--ssh);
   color: black;
 }
 
@@ -111,6 +111,8 @@
   top: 50px;
   left: 50%;
   background-color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#c8485d), to(#9797ff));
+  background: linear-gradient(to right, #c8485d, #9797ff);
   position: absolute;
   margin-left: -25px;
 }

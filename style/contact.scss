@@ -53,7 +53,7 @@
                 i {
                     animation: arrow-move 1s infinite;
                 }
-                box-shadow: var(--ssh);
+                box-shadow: var(--ssh),var(--ssh);
                 color: black;
                 &::before {
                     visibility: visible;
@@ -74,6 +74,7 @@
                 top: 50px;
                 left: 50%;
                 background-color: white;
+                background: linear-gradient(to right,rgb(200, 72, 93),rgb(151, 151, 255));
                 position: absolute;
                 margin-left: -25px;
             }

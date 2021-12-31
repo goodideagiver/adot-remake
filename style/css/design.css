@@ -51,18 +51,20 @@
   top: 0;
   left: 0;
   width: 130%;
-  opacity: 0;
   height: 100%;
   background: #ffffff54;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f43b4769), to(#443a948a));
-  background-image: linear-gradient(to left, #f43b4769 0%, #443a948a 100%);
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
   -webkit-box-shadow: var(--ssh);
           box-shadow: var(--ssh);
   z-index: -1;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
+  -webkit-transform: translateX(-100%) skewX(-45deg);
+          transform: translateX(-100%) skewX(-45deg);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .design ol li:hover {
@@ -70,5 +72,6 @@
 }
 
 .design ol li:hover::before {
-  opacity: 1;
+  -webkit-transform: translateX(0) skewX(-45deg);
+          transform: translateX(0) skewX(-45deg);
 }

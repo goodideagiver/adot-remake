@@ -36,21 +36,23 @@
 				top: 0;
 				left: 0;
 				width: 130%;
-                opacity: 0;
 				height: 100%;
 				background: #ffffff54;
-				background-image: linear-gradient(to left, #f43b4769 0%, #443a948a 100%);
+				background-image: linear-gradient(
+					120deg,
+					#fccb90 0%,
+					#d57eeb 100%
+				);
 				box-shadow: var(--ssh);
 				z-index: -1;
 				transform-origin: 0 0;
-				//transform: translateX(-100%) skewX(-45deg);
-				transition: opacity 0.4s;
+				transform: translateX(-100%) skewX(-45deg);
+				transition: transform 0.4s;
 			}
 			&:hover {
 				color: white;
 				&::before {
-					//transform: translateX(0) skewX(-45deg);
-                    opacity: 1;
+					transform: translateX(0) skewX(-45deg);
 				}
 			}
 		}

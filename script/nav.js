@@ -5,8 +5,19 @@ const mobileNav = document.querySelector(".mobile-nav");
 //console.log(mainNavHeight);
 const hamburger = document.querySelector("#hamburger");
 hamburger.addEventListener("click", mobileMenuToggle);
+mobileNav.addEventListener("click",mobileMenuToggle);
 
 function mobileMenuToggle() {
 	mobileNav.classList.toggle("list-toggle");
     hamburger.classList.toggle("eaten");
 }
+
+function mobileNavPopulate() {
+    const navAnchors = document.querySelectorAll('.links a');
+    mobileNav.innerHTML ="";
+    navAnchors.forEach(anchor => {
+        mobileNav.appendChild(anchor.cloneNode(true))
+    });
+}
+
+mobileNavPopulate();

@@ -28,12 +28,14 @@ arrowLeft.addEventListener("click",prevSlide);
 function showGallery(image) {
 	gallContainer.classList.toggle('closed');
 	slides[getClickedImageIndex(image)].classList.add('show-img');
+	document.querySelector('body').classList.add('no-scroll');
 }
 
 function galClose() {
 	gallimg[getActiveSlideIndex()].scrollIntoView({behavior: "smooth", inline: "nearest",block: "center"});
 	slides[getActiveSlideIndex()].classList.remove('show-img');
 	gallContainer.classList.toggle('closed');
+	document.querySelector('body').classList.remove('no-scroll');
 }
 
 function nextSlide() {

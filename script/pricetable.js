@@ -7,4 +7,5 @@ pricetableItems.forEach(priceDiv => {
 
 function togglePriceItemPreview() {
     event.currentTarget.classList.toggle('pricePreview');
+    document.querySelector('body').classList.toggle('no-scroll');
 }

@@ -36,8 +36,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
   background: -webkit-gradient(linear, left top, right top, from(rgba(200, 72, 93, 0.233)), to(rgba(151, 151, 255, 0.445)));
   background: linear-gradient(to right, rgba(200, 72, 93, 0.233), rgba(151, 151, 255, 0.445));
   position: relative;
@@ -48,7 +48,7 @@
 }
 
 .contact .contact-box::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -57,8 +57,8 @@
   background: -webkit-gradient(linear, left top, right top, from(rgba(200, 72, 93, 0.5)), to(rgba(151, 151, 255, 0.5)));
   background: linear-gradient(to right, rgba(200, 72, 93, 0.5), rgba(151, 151, 255, 0.5));
   opacity: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contact .contact-box:hover {
@@ -117,7 +117,8 @@
   transition: 0.5s;
 }
 
-.contact .link-wrapper a span, .contact .link-wrapper a i {
+.contact .link-wrapper a span,
+.contact .link-wrapper a i {
   position: relative;
   z-index: 2;
 }
@@ -144,7 +145,7 @@
 
 .contact .link-wrapper a::before {
   visibility: hidden;
-  content: '';
+  content: "";
   height: 300%;
   width: 100%;
   border-radius: 50%;

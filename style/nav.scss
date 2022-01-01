@@ -1,109 +1,117 @@
 .main-nav {
-    box-shadow: var(--ssh);
-    display: flex;
-    justify-content: space-between;
-    background-image: url("../img/noise.png"),linear-gradient(to right,white,white);
-    border-bottom: var(--line);
-    position: sticky;
-    top: 0;
-    padding: 5px 20px;
-    z-index: 6;
-    .title {
-        display: flex;
-        align-items: center;
-    }
-    .links {
-        display: flex;
-        gap: 5px;
-        align-items: center;
-        
-    }
-    a {
-        flex: 0 1 8%;
-        text-align: center;
-        padding: 15px;
-        
-        color: black;
-        font-weight: bold;
-        text-decoration: none;
-        //transition: .2s;
-        &:hover {
-            //background-color: black;
-            //color: white;
-            //transform: scale(0.95);
-            //color: orange;
-            box-shadow: var(--bor) inset;
-            //box-shadow: var(--ssh);
-        }
-    }
+	box-shadow: var(--ssh);
+	display: flex;
+	justify-content: space-between;
+	background-image: url("../img/noise.png"),
+		linear-gradient(to right, white, white);
+	border-bottom: var(--line);
+	position: sticky;
+	top: 0;
+	padding: 5px 20px;
+	z-index: 6;
+	.title {
+		display: flex;
+		align-items: center;
+	}
+	.links {
+		display: flex;
+		gap: 5px;
+		align-items: center;
+	}
+	a {
+		flex: 0 1 8%;
+		text-align: center;
+		padding: 15px;
+
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+		//transition: .2s;
+		&:hover {
+			//background-color: black;
+			//color: white;
+			//transform: scale(0.95);
+			//color: orange;
+			box-shadow: var(--bor) inset;
+			//box-shadow: var(--ssh);
+		}
+	}
 }
 
-@media (max-width:500px) {
-    .main-nav  {
-        .links {
-            display: none;            
-        }
-        .fa-bacon {
-            display: none;
-        }
-        .mobile-hamburger {
-            background-color: transparent;
-            border: none;
-            font-size: 2rem;
-            padding: 0 5px;
-            transition: 0.3s;
-        }
-        .mobile-nav {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            background-color: white;
-            width: 100%;
-            left: 0;
-            top: 100%;        
-            visibility: hidden;    
-            border: black solid 2px;
-            border-style: none none solid;
-            opacity: 0;
-            transition: .2s; 
-            box-shadow: 0 17px 15px rgba(0, 0, 0, 0.274);
-        }
-        .list-toggle {
-            visibility: visible;
-            opacity: 1;
-        }
-        .fa-hamburger {
-            animation: 5s hamburger infinite;
-            color: black;
-        }
-    }
+@media (max-width: 500px) {
+	.main-nav {
+		.links {
+			display: none;
+		}
+		.fa-bacon {
+			display: none;
+		}
+		.mobile-hamburger {
+			background-color: transparent;
+			border: none;
+			font-size: 2rem;
+			padding: 0 5px;
+			transition: 0.3s;
+		}
+		.mobile-nav {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			background-color: white;
+			width: 100%;
+			left: 0;
+			top: 100%;
+			visibility: hidden;
+			border: black solid 2px;
+			border-style: none none solid;
+			opacity: 0;
+			transition: 0.2s;
+			box-shadow: 0 17px 15px rgba(0, 0, 0, 0.274);
+		}
+		.list-toggle {
+			visibility: visible;
+			opacity: 1;
+		}
+		.fa-hamburger {
+			animation: 5s hamburger infinite;
+			color: black;
+		}
+	}
 }
 
 @keyframes hamburger {
-    0% {transform: scale(1);}
-    10% {transform: scale(1.1);}
-    20% {transform: scale(1);}
-    100% {transform: scale(1);}
+	0% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(1.1);
+	}
+	20% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
-@media (min-width:500px) {
-    .main-nav {
-        .mobile-nav {
-            display: none;
-        }
-        .mobile-hamburger {
-            display: none;
-        }
-    }
+@media (min-width: 500px) {
+	.main-nav {
+		.mobile-nav {
+			display: none;
+		}
+		.mobile-hamburger {
+			display: none;
+		}
+	}
 }
 
 .eaten {
-    .fa-hamburger {
-        display: none;
-    }
-    .fa-bacon {
-        display: unset;
-        color: red;
-    }
-    transform: rotate(360deg) scale(0.9);
+	.fa-hamburger {
+		display: none;
+	}
+	.fa-bacon {
+		display: unset;
+		color: red;
+	}
+	transform: rotate(360deg) scale(0.9);
 }

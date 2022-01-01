@@ -40,8 +40,8 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .pricetable > div > div {
@@ -62,7 +62,7 @@
 }
 
 .pricetable > div > div p:nth-child(2)::before {
-  content: 'From: ';
+  content: "From: ";
   opacity: 0.5;
 }
 
@@ -80,8 +80,8 @@
           filter: grayscale(0.8) opacity(0.8);
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 .pricetable > div:hover {

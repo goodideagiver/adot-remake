@@ -1,27 +1,27 @@
 .m-foot {
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    padding: 2px;
-    summary {
-        cursor: pointer;
-    }
-    details[open] {
-        width: 100%;
-    }
-    details {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    a {
-        color: white;
-        text-decoration: none;
-        display: block;
-        width: fit-content;
-        padding: 2px 5px;
-    }
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+	padding: 2px;
+	summary {
+		cursor: pointer;
+	}
+	details[open] {
+		width: 100%;
+	}
+	details {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+		display: block;
+		width: fit-content;
+		padding: 2px 5px;
+	}
 }

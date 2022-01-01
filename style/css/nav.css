@@ -84,8 +84,8 @@
     border: black solid 2px;
     border-style: none none solid;
     opacity: 0;
-    -webkit-transition: .2s;
-    transition: .2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
     -webkit-box-shadow: 0 17px 15px rgba(0, 0, 0, 0.274);
             box-shadow: 0 17px 15px rgba(0, 0, 0, 0.274);
   }

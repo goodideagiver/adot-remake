@@ -1,18 +1,3 @@
-// function galleryenabler(clickede) {
-//     console.log('Clicked' + clickede)
-//     if (clickede.classList.contains("enabled")) {
-//         clickede.classList.remove("enabled");
-//     } else {
-//         gallimg.forEach(element => {
-//             element.classList.remove("enabled");
-//         });
-//         clickede.classList.add("enabled");
-//         setTimeout(() => {
-//             clickede.scrollIntoView({block: "center",behavior: "smooth"});
-//         }, 500);
-//     }
-// }
-
 const gallimg = document.querySelectorAll(".images img");
 gallContainer = document.createElement("div");
 gallContainer.classList.add("lightbox");
@@ -28,7 +13,6 @@ gallimg.forEach((galimage) => {
 document.querySelector(".lightbox > div").innerHTML='<i id="gallX" class="fas fa-times"></i>';
 gallContainer.innerHTML += '<div class="lightbox-controls"><i id="goLeft" class="fas fa-arrow-left"></i><i id="goRight" class="fas fa-arrow-right"></i>';
 document.getElementById("gallX").addEventListener('click',galClose);
-//document.querySelector('.lightbox img').classList.add('show-img')
 gallContainer.classList.toggle('closed');
 
 const arrowLeft = document.querySelector("#goLeft");
@@ -48,9 +32,6 @@ function galClose() {
 	slides[getActiveSlideIndex()].classList.remove('show-img');
 	gallContainer.classList.toggle('closed');
 }
-
-
-
 
 function nextSlide() {
 	let active = getActiveSlideIndex();
@@ -73,13 +54,13 @@ function prevSlide() {
 }
 
 function getActiveSlideIndex() {
-	return getIndex(slides,document.querySelector(".show-img"));
+	return getArrayItemIndex(slides,document.querySelector(".show-img"));
 }
 
 function getClickedImageIndex(clickedImage) {
-	return getIndex(gallimg, clickedImage);
+	return getArrayItemIndex(gallimg, clickedImage);
 }
 
-function getIndex(element,rule) {
+function getArrayItemIndex(element,rule) {
 	return Array.prototype.indexOf.call(element,rule)
 }

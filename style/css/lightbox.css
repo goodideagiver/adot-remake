@@ -40,7 +40,6 @@
   color: white;
   font-size: 2rem;
   display: block;
-  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -79,7 +78,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 0px;
+  gap: 5px;
 }
 
 .lightbox-controls i {
@@ -88,6 +87,9 @@
 }
 
 .lightbox-controls > div {
+  border: rgba(255, 255, 255, 0.137) 2px solid;
+  cursor: pointer;
+  border-radius: 5px;
   padding: 10px 0;
   max-width: 300px;
   display: block;

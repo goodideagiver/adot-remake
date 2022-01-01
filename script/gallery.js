@@ -12,7 +12,8 @@ document.querySelector("body > main").appendChild(gallContainer);
 gallimg.forEach((galimage) => {
 	galimage.addEventListener("click", () => showGallery(galimage));
 });
-document.querySelector(".lightbox > div").innerHTML='<i id="gallX" class="fas fa-times"></i>';
+document.querySelector(".lightbox > div").classList.add('lightbox-controls');
+document.querySelector(".lightbox > div").innerHTML='<div id="gallX"><i class="fas fa-times"></i>';
 gallContainer.innerHTML += '<div class="lightbox-controls"><div id="goLeft"><i  class="fas fa-arrow-left"></i></div><div id="goRight"><i  class="fas fa-arrow-right"></div></i>';
 document.getElementById("gallX").addEventListener('click',galClose);
 gallContainer.classList.toggle('closed');

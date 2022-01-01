@@ -24,10 +24,7 @@
         color: white;
         font-size: 2rem;
         display: block;
-        //border: rgb(56, 56, 56) solid 1px;
-        border-radius: 5px;
         cursor: pointer;
-        //margin: 10px;
     }
     main {
         display: flex;
@@ -54,12 +51,15 @@
     width: 100%;
     justify-content: center;
     //padding: 20px;
-    gap: 0px;
+    gap: 5px;
     i {
         width: 100%;
         text-align: center;
     }
     >div {
+        border: rgba(255, 255, 255, 0.137) 2px solid;
+        cursor: pointer;
+        border-radius: 5px;
         padding: 10px 0;
         max-width: 300px;
         display: block;

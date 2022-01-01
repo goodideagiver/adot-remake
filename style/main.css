@@ -33,4 +33,5 @@ body {
 
 * {
     font-family: 'Share Tech', sans-serif;
+    scroll-behavior: smooth;
 }

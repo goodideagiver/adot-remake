@@ -1,7 +1,6 @@
 const pricetableItems = document.querySelectorAll('.pricetable > div');
 
 pricetableItems.forEach(priceDiv => {
-    console.log(priceDiv);
     priceDiv.addEventListener("click",togglePriceItemPreview);
     priceDiv.addEventListener("touch",togglePriceItemPreview);
 });

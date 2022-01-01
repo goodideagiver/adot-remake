@@ -57,6 +57,7 @@
 			background-image: url("/img/noise.png"),
 		linear-gradient(to right, white, white);
 			position: absolute;
+			z-index:5;
 			display: flex;
 			flex-direction: column;
 			background-color: white;

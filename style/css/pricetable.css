@@ -17,6 +17,10 @@
   margin: -1px auto;
 }
 
+.pricetable h3 {
+  height: 50px;
+}
+
 .pricetable > div {
   cursor: -webkit-zoom-in;
   cursor: zoom-in;

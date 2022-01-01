@@ -28,26 +28,27 @@ gallimg.forEach((galimage) => {
 document.querySelector(".lightbox > div").innerHTML='<i id="gallX" class="fas fa-times"></i>';
 gallContainer.innerHTML += '<div class="lightbox-controls"><i id="goLeft" class="fas fa-arrow-left"></i><i id="goRight" class="fas fa-arrow-right"></i>';
 document.getElementById("gallX").addEventListener('click',galClose);
-document.querySelector('.lightbox img').classList.add('show-img')
-
-
-
-
-function showGallery(image) {
-	//document.querySelector(`.lightbox ${image}`).classList.add('show-img');
-	gallContainer.classList.toggle('closed');
-	document.querySelector('.lightbox img').classList.add('show-img')
-}
-
-function galClose() {
-	gallContainer.classList.toggle('closed');
-}
+//document.querySelector('.lightbox img').classList.add('show-img')
+gallContainer.classList.toggle('closed');
 
 const arrowLeft = document.querySelector("#goLeft");
 const arrowRight = document.querySelector("#goRight");
 let slides = document.querySelectorAll(".lightbox img")
 arrowRight.addEventListener("click",nextSlide);
 arrowLeft.addEventListener("click",prevSlide);
+
+
+function showGallery(image) {
+	gallContainer.classList.toggle('closed');
+	slides[getClickedImageIndex(image)].classList.add('show-img');
+}
+
+function galClose() {
+	slides[getActiveSlideIndex()].classList.remove('show-img');
+	gallContainer.classList.toggle('closed');
+}
+
+
 
 
 function nextSlide() {
@@ -75,7 +76,18 @@ function getActiveSlideIndex() {
 	for (let i = 0; i < slides.length; i++) {
 		if (slides[i].className != "") {
 			activeSlide = i;
+			return activeSlide;
 		}
 	}
-	return activeSlide;
+}
+
+function getClickedImageIndex(clickedImage) {
+	let imageIndex ="";
+	for (let i = 0; i < gallimg.length; i++) {
+		if (gallimg[i] == clickedImage) {
+			imageIndex = i;
+			//console.log("Klikniety img = " + imageIndex);
+			return imageIndex;
+		} 
+	}
 }

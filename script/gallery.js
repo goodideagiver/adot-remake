@@ -44,6 +44,7 @@ function showGallery(image) {
 }
 
 function galClose() {
+	gallimg[getActiveSlideIndex()].scrollIntoView({behavior: "smooth", inline: "nearest",block: "center"});
 	slides[getActiveSlideIndex()].classList.remove('show-img');
 	gallContainer.classList.toggle('closed');
 }

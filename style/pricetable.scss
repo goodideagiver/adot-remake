@@ -72,6 +72,10 @@
 }
 
 .pricePreview {
+	&::before {
+		content: 'Click anywhere to zoom out';
+		color: white;
+	}
 	overscroll-behavior:none;
 	overflow: hidden;
 	cursor:zoom-out !important;
@@ -81,7 +85,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: gray !important;
+	background-color: rgb(0, 0, 0) !important;
 	z-index: 50;
 	align-items: center !important;
 	justify-content: center !important;
@@ -100,15 +104,17 @@
 		flex-grow: 0 !important;
 		width: fit-content !important;
 		filter: none !important;
-		flex-basis: 50% !important;
-		background-color: white !important;
+		flex-basis: unset !important;
 		padding: 10px;
+		max-height: 80vh !important;
+		object-fit: scale-down !important;
 	}
 	div {
-		width: max-content !important;
+		width: fit-content !important;
 		flex-grow: 0 !important;
 		background-color: white !important;
-		padding: 20px 0 !important; 
-		flex-basis: 50% !important;
+		padding: 20px!important; 
+		flex-basis: unset !important;
+		min-width: 200px !important;
 	}
 }

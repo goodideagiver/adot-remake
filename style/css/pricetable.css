@@ -115,7 +115,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: gray !important;
+  background-color: black !important;
   z-index: 50;
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
@@ -125,6 +125,11 @@
           justify-content: center !important;
   padding: 20px !important;
   justify-content: center !important;
+}
+
+.pricePreview::before {
+  content: 'Click anywhere to zoom out';
+  color: white;
 }
 
 .pricePreview * {
@@ -149,21 +154,24 @@
   width: fit-content !important;
   -webkit-filter: none !important;
           filter: none !important;
-  -ms-flex-preferred-size: 50% !important;
-      flex-basis: 50% !important;
-  background-color: white !important;
+  -ms-flex-preferred-size: unset !important;
+      flex-basis: unset !important;
   padding: 10px;
+  max-height: 80vh !important;
+  -o-object-fit: scale-down !important;
+     object-fit: scale-down !important;
 }
 
 .pricePreview div {
-  width: -webkit-max-content !important;
-  width: -moz-max-content !important;
-  width: max-content !important;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
   -webkit-box-flex: 0 !important;
       -ms-flex-positive: 0 !important;
           flex-grow: 0 !important;
   background-color: white !important;
-  padding: 20px 0 !important;
-  -ms-flex-preferred-size: 50% !important;
-      flex-basis: 50% !important;
+  padding: 20px !important;
+  -ms-flex-preferred-size: unset !important;
+      flex-basis: unset !important;
+  min-width: 200px !important;
 }

@@ -54,6 +54,8 @@
 			transition: 0.3s;
 		}
 		.mobile-nav {
+			background-image: url("/img/noise.png"),
+		linear-gradient(to right, white, white);
 			position: absolute;
 			display: flex;
 			flex-direction: column;

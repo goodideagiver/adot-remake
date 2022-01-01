@@ -68,6 +68,8 @@
     transition: 0.3s;
   }
   .main-nav .mobile-nav {
+    background-image: url("/img/noise.png"), -webkit-gradient(linear, left top, right top, from(white), to(white));
+    background-image: url("/img/noise.png"), linear-gradient(to right, white, white);
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;

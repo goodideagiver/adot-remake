@@ -73,22 +73,13 @@ function prevSlide() {
 }
 
 function getActiveSlideIndex() {
-	let activeSlide = "";
-	for (let i = 0; i < slides.length; i++) {
-		if (slides[i].className != "") {
-			activeSlide = i;
-			return activeSlide;
-		}
-	}
+	return getIndex(slides,document.querySelector(".show-img"));
 }
 
 function getClickedImageIndex(clickedImage) {
-	let imageIndex ="";
-	for (let i = 0; i < gallimg.length; i++) {
-		if (gallimg[i] == clickedImage) {
-			imageIndex = i;
-			//console.log("Klikniety img = " + imageIndex);
-			return imageIndex;
-		} 
-	}
+	return getIndex(gallimg, clickedImage);
+}
+
+function getIndex(element,rule) {
+	return Array.prototype.indexOf.call(element,rule)
 }

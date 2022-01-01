@@ -3,9 +3,11 @@ gallContainer = document.createElement("div");
 gallContainer.classList.add("lightbox");
 xButton = document.createElement("div");
 gallContainer.appendChild(xButton);
+imgwrapper = document.createElement("main");
 gallimg.forEach((element) => {
-	gallContainer.appendChild(element.cloneNode(true));
+	imgwrapper.appendChild(element.cloneNode(true));
 });
+gallContainer.appendChild(imgwrapper);
 document.querySelector("body > main").appendChild(gallContainer);
 gallimg.forEach((galimage) => {
 	galimage.addEventListener("click", () => showGallery(galimage));

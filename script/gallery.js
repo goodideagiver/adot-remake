@@ -33,6 +33,9 @@ function showGallery(image) {
 }
 
 function galClose() {
+	if (getActiveSlideIndex()< 0) {
+		return
+	}
 	gallimg[getActiveSlideIndex()].scrollIntoView({behavior: "smooth", inline: "nearest",block: "center"});
 	slides[getActiveSlideIndex()].classList.remove('show-img');
 	gallContainer.classList.toggle('closed');
@@ -42,6 +45,9 @@ function galClose() {
 
 function nextSlide() {
 	let active = getActiveSlideIndex();
+	if (active < 0) {
+		return
+	}
 	slides[active].classList.toggle('show-img');
 	if (active != slides.length-1) {
 	slides[active+1].classList.toggle('show-img');
@@ -52,6 +58,9 @@ function nextSlide() {
 
 function prevSlide() {
 	let active = getActiveSlideIndex();
+	if (active < 0) {
+		return
+	}
 	slides[active].classList.toggle('show-img');
 	if (slides[active-1] == undefined) {
 		slides[slides.length-1].classList.toggle('show-img');
@@ -70,4 +79,31 @@ function getClickedImageIndex(clickedImage) {
 
 function getArrayItemIndex(element,rule) {
 	return Array.prototype.indexOf.call(element,rule)
+}
+
+
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '38') {
+        // up arrow
+    }
+    else if (e.keyCode == '40') {
+        // down arrow
+    }
+    else if (e.keyCode == '37') {
+       // left arrow
+	   prevSlide();
+    }
+    else if (e.keyCode == '39') {
+       // right arrow
+	   nextSlide();
+    }
+	else if (e.key === 'Escape') {
+		galClose();
+	}
+
 }

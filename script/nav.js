@@ -21,3 +21,35 @@ function mobileNavPopulate() {
 }
 
 mobileNavPopulate();
+
+document.onscroll = navHideOnScroll;
+
+let target = document.querySelector('footer');
+
+
+function navHideOnScroll() {
+    if (elementInViewport2(target)) {
+    mobileNav.classList.remove("list-toggle");
+    hamburger.classList.remove("eaten");
+    }
+}
+
+function elementInViewport2(el) {
+    var top = el.offsetTop;
+    var left = el.offsetLeft;
+    var width = el.offsetWidth;
+    var height = el.offsetHeight;
+  
+    while(el.offsetParent) {
+      el = el.offsetParent;
+      top += el.offsetTop;
+      left += el.offsetLeft;
+    }
+  
+    return (
+      top < (window.pageYOffset + window.innerHeight) &&
+      left < (window.pageXOffset + window.innerWidth) &&
+      (top + height) > window.pageYOffset &&
+      (left + width) > window.pageXOffset
+    );
+  }

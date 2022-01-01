@@ -39,12 +39,9 @@
 .lightbox i {
   color: white;
   font-size: 2rem;
-  padding: 10px;
   display: block;
-  border: #383838 solid 1px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 10px;
 }
 
 .lightbox main {
@@ -74,6 +71,7 @@
 }
 
 .lightbox-controls {
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,44 +79,52 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 0px;
 }
 
 .lightbox-controls i {
   width: 100%;
   text-align: center;
+}
+
+.lightbox-controls > div {
+  padding: 10px 0;
   max-width: 300px;
   display: block;
   position: relative;
+  z-index: 9;
   overflow: hidden;
-}
-
-.lightbox-controls i::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(200, 72, 93, 0.8)), to(rgba(151, 151, 255, 0.8)));
-  background: linear-gradient(to right, rgba(200, 72, 93, 0.8), rgba(151, 151, 255, 0.8));
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-transform: scale(0.1);
-          transform: scale(0.1);
-  border-radius: 50%;
-  height: 200%;
 }
 
-.lightbox-controls i:hover {
+.lightbox-controls > div > * {
+  position: relative;
+  z-index: 10;
   color: white;
 }
 
-.lightbox-controls i:hover::after {
-  opacity: 1;
+.lightbox-controls > div::before {
+  content: '';
+  background: white;
+  background-color: #4158D0;
+  background-image: linear-gradient(242deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  visibility: hidden;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.lightbox-controls > div:hover::before {
   -webkit-transform: scale(2);
           transform: scale(2);
+  visibility: visible;
 }
 
 .lightbox > div:nth-child(1) {

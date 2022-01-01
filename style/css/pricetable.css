@@ -94,3 +94,10 @@
   -webkit-filter: none;
           filter: none;
 }
+
+@media (max-width: 800px) {
+  .pricetable > div img {
+    -webkit-filter: none;
+            filter: none;
+  }
+}

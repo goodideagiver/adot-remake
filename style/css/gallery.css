@@ -103,3 +103,10 @@ header.sectionheader > * {
   width: -moz-fit-content;
   width: fit-content;
 }
+
+@media (max-width: 800px) {
+  .gallery .images img {
+    -webkit-filter: none;
+            filter: none;
+  }
+}

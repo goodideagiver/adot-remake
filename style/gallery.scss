@@ -80,3 +80,13 @@ header.sectionheader {
 		width: fit-content;
 	}
 }
+
+@media (max-width:800px) {
+    .gallery {
+		.images {
+			img {
+				filter: none;
+			}
+		}
+	}
+}

@@ -58,3 +58,14 @@
 		}
 	}
 }
+
+
+@media (max-width:800px) {
+    .pricetable {
+        >div {
+            img {
+                filter: none;
+            }
+        }
+    }
+}

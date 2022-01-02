@@ -143,5 +143,29 @@
 @media (max-width: 500px) {
 	.contact .link-wrapper {
 		transform: none;
+		a {
+			animation: floatUp 3s infinite;
+		}
+	}
+	@for $i from 1 through 3 {
+		.contact .link-wrapper a:nth-child(#{$i}) {
+			animation-delay: (0.1+$i/5)+s;
+		}
+	}
+}
+
+@keyframes floatUp {
+	0% {
+		//background-color: #B6A5F0;
+	}
+	10% {
+		background-color: #B6A5F0;
+		transform: scale(1.05);		
+	}
+	20% {
+		transform: scale(1);	
+	}
+	100% {
+		transform: scale(1);
 	}
 }

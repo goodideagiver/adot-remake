@@ -193,3 +193,10 @@
             transform: translate(0);
   }
 }
+
+@media (max-width: 500px) {
+  .contact .link-wrapper {
+    -webkit-transform: none;
+            transform: none;
+  }
+}

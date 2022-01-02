@@ -139,3 +139,9 @@
 		transform: translate(0);
 	}
 }
+
+@media (max-width: 500px) {
+	.contact .link-wrapper {
+		transform: none;
+	}
+}

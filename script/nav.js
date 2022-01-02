@@ -24,14 +24,15 @@ mobileNavPopulate();
 
 document.onscroll = navHideOnScroll;
 
-let target = document.querySelector('footer');
+let target = document.querySelector('.link-wrapper');
 
 
 function navHideOnScroll() {
-    if (elementInViewport2(target)) {
-    mobileNav.classList.remove("list-toggle");
-    hamburger.classList.remove("eaten");
-    }
+  if (elementInViewport2(target)) {
+    hideHamburger(1);
+  } else {
+    hideHamburger(0);
+  }
 }
 
 function elementInViewport2(el) {
@@ -52,4 +53,27 @@ function elementInViewport2(el) {
       (top + height) > window.pageYOffset &&
       (left + width) > window.pageXOffset
     );
+  }
+
+  setInterval(() => {
+      if (elementInViewport2(target)) {
+        hideHamburger(1);
+      } else {
+        hideHamburger(0);
+      }
+  }, 500);
+
+  function hideHamburger(yesornot) {
+    if (yesornot) {
+        hamburger.classList.remove("eaten");
+        hamburger.style.visibility = "hidden";
+        hamburger.style.opacity = 0;
+        hamburger.style.transform = 'scale(.1)';
+        mobileNav.classList.remove("list-toggle");
+    } else {
+        // hamburger.style.visibility = "visible";
+        // hamburger.style.opacity = 1;
+        // hamburger.style.transform = 'scale(1)';
+        hamburger.removeAttribute("style");
+    }
   }

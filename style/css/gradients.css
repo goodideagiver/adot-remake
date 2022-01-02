@@ -1,0 +1,53 @@
+.pricetable {
+  position: relative;
+}
+
+.pricetable::before {
+  content: '';
+  position: absolute;
+  background: radial-gradient(rgba(38, 0, 255, 0.178), transparent 50%);
+  width: 200vw;
+  height: 100vh;
+  aspect-ratio: 1/1;
+  top: 0;
+  left: -500px;
+  z-index: -3;
+  visibility: visible;
+  display: block;
+}
+
+body > main {
+  position: relative;
+}
+
+body > main::before {
+  content: '';
+  position: absolute;
+  background: radial-gradient(#f5abffd0, transparent 65%);
+  width: auto;
+  height: 100vh;
+  aspect-ratio: 1/1;
+  top: -500px;
+  right: 0;
+  z-index: -3;
+  visibility: visible;
+  display: block;
+}
+
+.main-h > header > main {
+  position: relative;
+}
+
+.main-h > header > main::before {
+  content: '';
+  position: absolute;
+  background: radial-gradient(#ff656559, transparent 65%);
+  width: 1500px;
+  height: 1500px;
+  aspect-ratio: 1/1;
+  top: -750px;
+  left: -750px;
+  z-index: -3;
+  visibility: visible;
+  display: block;
+}

@@ -142,11 +142,6 @@
   border-radius: 5px;
 }
 
-.pricePreview > * {
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-
 .pricePreview img {
   aspect-ratio: unset !important;
   height: auto !important;
@@ -161,7 +156,7 @@
   -ms-flex-preferred-size: unset !important;
       flex-basis: unset !important;
   padding: 10px;
-  max-height: 80vh !important;
+  max-height: 50vh !important;
   -o-object-fit: scale-down !important;
      object-fit: scale-down !important;
 }
@@ -178,6 +173,16 @@
   -ms-flex-preferred-size: unset !important;
       flex-basis: unset !important;
   min-width: 200px !important;
+}
+
+.pricePreview div h3 {
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
+
+.pricePreview div p {
+  display: none;
 }
 
 .no-scroll {

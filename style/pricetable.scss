@@ -151,6 +151,8 @@
 		height: 100%;
 		position: relative;
 		>* {
+			align-items: center;
+			justify-content: center;
 			display: flex;
 			visibility: hidden;
 			flex-direction: column;
@@ -167,6 +169,7 @@
 				height: 100%;
 				width: 100%;
 				object-fit: scale-down;
+				flex-basis: 80%;
 			}
 		}
 	}

@@ -65,7 +65,6 @@ function getActivePricetableDiv() {
 }
 
 function showPricetablePreview(clickedDiv) {
-    // console.log(getArrayItemIndex(pricetableItems,clickedDiv.currentTarget));
     let clickedDiv1 = getArrayItemIndex(pricetableItems,clickedDiv.currentTarget);
     pricetableContainer.classList.remove('closed');
     priceDivs[clickedDiv1].classList.add('priceDivVisible');

@@ -225,6 +225,12 @@
 }
 
 .pricePreviewContainer > main > * {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,6 +255,8 @@
   width: 100%;
   -o-object-fit: scale-down;
      object-fit: scale-down;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
 }
 
 .priceDivVisible {

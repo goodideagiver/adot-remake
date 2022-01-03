@@ -12,10 +12,10 @@ pricetableContainer.innerHTML = `
     </main>
     <div class="lightbox-controls">
         <div id="priceLeft">
-            <i   class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-left"></i>
         </div>
         <div id="priceRight">
-            <i   class="fas fa-arrow-right"></i>
+            <i class="fas fa-arrow-right"></i>
         </div>
     </div>
 `;

@@ -38,6 +38,7 @@ const priceDivs = document.querySelectorAll('.pricePreviewContainer main > div')
 document.getElementById('priceX').addEventListener('click',closePricetablePreview);
 document.getElementById('priceLeft').addEventListener('click',prevPricetableItem);
 document.getElementById('priceRight').addEventListener('click',nextPricetableItem);
+//document.querySelector('.pricePreviewContainer').addEventListener('click',closePricetablePreview);
 
 function nextPricetableItem() {
     let active = getActivePricetableDiv();

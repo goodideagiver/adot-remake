@@ -1,4 +1,5 @@
 .lightbox {
+    padding: 5%;
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -13,7 +14,10 @@
     img {
         //display: none;
         position: absolute;
-        max-width: 100%;
+        //max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
         max-height: 60vh;
         opacity: 0;
         transition: .2s;
@@ -31,7 +35,9 @@
         align-items: center;
         justify-content: center;
         width: fit-content;
+        position: relative;
         height: 100%;
+        width: 100%;
     }
 }
 

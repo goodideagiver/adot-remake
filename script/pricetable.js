@@ -69,15 +69,3 @@ function showPricetablePreview(clickedDiv) {
     pricetableContainer.classList.remove('closed');
     priceDivs[clickedDiv1].classList.add('priceDivVisible');
 }
-
-
-// pricetableItems.forEach(priceDiv => {
-//     priceDiv.addEventListener("click",togglePriceItemPreview);
-//     priceDiv.addEventListener("touch",togglePriceItemPreview);
-// });
-
-// function togglePriceItemPreview(event) {
-//     event.currentTarget.classList.toggle('pricePreview');
-//     document.querySelector('body').classList.toggle('no-scroll');
-//     document.querySelector('html').classList.toggle('no-scroll');
-// }

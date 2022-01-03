@@ -128,3 +128,51 @@
 .no-scroll {
 	overflow: hidden !important;
 }
+
+.pricePreviewContainer {
+	.lightbox-controls {
+		color: white;
+		font-size: 1.5rem;
+	}
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 50;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	> main {
+		max-width: 1000px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		>* {
+			display: flex;
+			visibility: hidden;
+			flex-direction: column;
+			color: white;
+			text-align: center;
+			gap: 10px;
+			font-size: 1.2rem;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit: scale-down;
+			}
+		}
+	}
+}
+
+.priceDivVisible {
+	visibility: visible !important;
+}
+

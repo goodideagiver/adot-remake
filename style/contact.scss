@@ -65,6 +65,7 @@
 		transition: 1s;
 		&:hover {
 			transform: none;
+			transition: .3s;
 		}
 		a {
 			background-color: black;

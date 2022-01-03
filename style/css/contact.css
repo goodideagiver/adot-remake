@@ -91,6 +91,8 @@
 .contact .link-wrapper:hover {
   -webkit-transform: none;
           transform: none;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .contact .link-wrapper a {

@@ -57,6 +57,7 @@ function prevPricetableItem() {
 }
 
 function closePricetablePreview() {
+    toggleBodyScroll("on");
     let active = getActivePricetableDiv();
     priceDivs[active].classList.remove('priceDivVisible');
     pricetableContainer.classList.add('closed');
@@ -68,6 +69,7 @@ function getActivePricetableDiv() {
 }
 
 function showPricetablePreview(clickedDiv) {
+    toggleBodyScroll("off");
     let clickedDiv1 = getArrayItemIndex(pricetableItems,clickedDiv.currentTarget);
     pricetableContainer.classList.remove('closed');
     priceDivs[clickedDiv1].classList.add('priceDivVisible');

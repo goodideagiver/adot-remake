@@ -266,6 +266,7 @@
      object-fit: scale-down;
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
+  margin: 20px 0;
 }
 
 .pricePreviewContainer > main > * div {

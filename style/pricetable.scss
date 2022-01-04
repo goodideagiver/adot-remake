@@ -177,6 +177,7 @@
 				object-fit: scale-down;
 				flex-basis: 80%;
 			}
+			div {flex-basis: 20%; display: flex; align-items: center; justify-content: center;}
 		}
 	}
 }

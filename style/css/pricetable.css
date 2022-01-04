@@ -268,6 +268,20 @@
       flex-basis: 80%;
 }
 
+.pricePreviewContainer > main > * div {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .priceDivVisible {
   visibility: visible !important;
   opacity: 1 !important;

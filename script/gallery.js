@@ -28,8 +28,22 @@ arrowLeft.addEventListener("click",prevSlide);
 function showGallery(image) {
 	gallContainer.classList.toggle('closed');
 	slides[getClickedImageIndex(image)].classList.add('show-img');
-	document.querySelector('body').classList.add('no-scroll');
-	document.querySelector('html').classList.add('no-scroll');
+	toggleBodyScroll("off");
+}
+
+function toggleBodyScroll(option) {
+	switch (option) {
+		case "on":
+			document.querySelector('body').classList.remove('no-scroll');
+			document.querySelector('html').classList.remove('no-scroll');
+			break;
+		case "off":
+			document.querySelector('body').classList.add('no-scroll');
+			document.querySelector('html').classList.add('no-scroll');
+			break;
+		default:
+			break;
+	}
 }
 
 function galClose() {
@@ -39,8 +53,7 @@ function galClose() {
 	gallimg[getActiveSlideIndex()].scrollIntoView({behavior: "smooth", inline: "nearest",block: "center"});
 	slides[getActiveSlideIndex()].classList.remove('show-img');
 	gallContainer.classList.toggle('closed');
-	document.querySelector('body').classList.remove('no-scroll');
-	document.querySelector('html').classList.remove('no-scroll');
+	toggleBodyScroll("on");
 }
 
 function nextSlide() {

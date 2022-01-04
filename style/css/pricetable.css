@@ -190,7 +190,7 @@
 }
 
 .pricePreviewContainer {
-  padding: 10%;
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,7 +219,7 @@
 }
 
 .pricePreviewContainer > main {
-  margin: 10px 0;
+  margin: 20px 0;
   max-width: 1000px;
   width: 100%;
   height: 100%;
@@ -246,7 +246,6 @@
           flex-direction: column;
   color: white;
   text-align: center;
-  gap: 10px;
   font-size: 1.2rem;
   position: absolute;
   left: 0;
@@ -266,6 +265,21 @@
      object-fit: scale-down;
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
+  padding: 10px 0;
+}
+
+.pricePreviewContainer > main > * div {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .priceDivVisible {

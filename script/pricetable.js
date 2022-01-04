@@ -20,11 +20,6 @@ pricetableContainer.innerHTML = `
     </div>
 `;
 document.querySelector('body > main').appendChild(pricetableContainer);
-let paragraphs = document.querySelectorAll('.pricePreviewContainer p');
-
-paragraphs.forEach(paragraph => {
-    paragraph.remove();
-});
 
 function copyPricetableInfo() {
     infoPricetable = document.createElement("main");
@@ -32,13 +27,15 @@ function copyPricetableInfo() {
         infoPricetable.appendChild(priceDiv.cloneNode(true));
         priceDiv.addEventListener('click',showPricetablePreview);
     });
+    infoPricetable.querySelectorAll('p').forEach(element => {
+        element.remove();
+    });
     return infoPricetable.innerHTML;
 }
 const priceDivs = document.querySelectorAll('.pricePreviewContainer main > div');
 document.getElementById('priceX').addEventListener('click',closePricetablePreview);
 document.getElementById('priceLeft').addEventListener('click',prevPricetableItem);
 document.getElementById('priceRight').addEventListener('click',nextPricetableItem);
-//document.querySelector('.pricePreviewContainer').addEventListener('click',closePricetablePreview);
 
 function nextPricetableItem() {
     let active = getActivePricetableDiv();
@@ -57,6 +54,7 @@ function prevPricetableItem() {
 }
 
 function closePricetablePreview() {
+    toggleBodyScroll("on");
     let active = getActivePricetableDiv();
     priceDivs[active].classList.remove('priceDivVisible');
     pricetableContainer.classList.add('closed');
@@ -68,6 +66,7 @@ function getActivePricetableDiv() {
 }
 
 function showPricetablePreview(clickedDiv) {
+    toggleBodyScroll("off");
     let clickedDiv1 = getArrayItemIndex(pricetableItems,clickedDiv.currentTarget);
     pricetableContainer.classList.remove('closed');
     priceDivs[clickedDiv1].classList.add('priceDivVisible');

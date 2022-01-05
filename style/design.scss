@@ -14,15 +14,19 @@
 			font-size: 1.5rem;
 		}
 		li {
-			&:nth-child(2) {
-				border: 1px black;
-				border-style: solid none;
-			}
-			padding: 20px;
-			min-height: 20vh;
+			// &:nth-child(2) {
+			// 	border: 1px black;
+			// 	border-style: solid none;
+			// }
+			margin: 20px;
+			padding: 40px 20px;
+			//min-height: 20vh;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			border: 2px rebeccapurple dashed;
+			//border-radius: 25px;
+			background-color: rgba(255, 255, 255, 0.198);
 			p {
 				color: rgba(0, 0, 0, 0.568);
 				font-size: 1.2rem;

@@ -20,7 +20,7 @@ gallContainer.classList.toggle('closed');
 
 const arrowLeft = document.querySelector("#goLeft");
 const arrowRight = document.querySelector("#goRight");
-let slides = document.querySelectorAll(".lightbox img")
+const slides = document.querySelectorAll(".lightbox img")
 arrowRight.addEventListener("click",nextSlide);
 arrowLeft.addEventListener("click",prevSlide);
 
@@ -94,9 +94,7 @@ function getArrayItemIndex(element,rule) {
 	return Array.prototype.indexOf.call(element,rule)
 }
 
-
 document.onkeydown = checkKey;
-
 function checkKey(e) {
 
     e = e || window.event;
@@ -118,5 +116,4 @@ function checkKey(e) {
 	else if (e.key === 'Escape') {
 		galClose();
 	}
-
 }

@@ -69,9 +69,13 @@ function prevPricetableItem() {
 function closePricetablePreview() {
 	toggleBodyScroll('on');
 	let active = getActivePricetableDiv();
-	priceDivs[active].classList.remove('priceDivVisible');
-	pricetableContainer.classList.add('closed');
 	pricetableItems[active].scrollIntoView({ block: 'center' });
+	pricetableContainer.classList.add('close-anim');
+	setTimeout(() => {
+		priceDivs[active].classList.remove('priceDivVisible');
+		pricetableContainer.classList.add('closed');
+		pricetableContainer.classList.remove('close-anim');
+	}, 500);
 }
 
 function getActivePricetableDiv() {

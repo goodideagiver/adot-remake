@@ -1,7 +1,4 @@
 .lightbox {
-	* {
-		outline: red 1px solid;
-	}
 	padding: 5%;
 	display: flex;
 	position: fixed;
@@ -26,6 +23,7 @@
 		transition: 0.2s;
 		transform: scale(0.9);
 		user-select: none;
+		visibility: hidden;
 	}
 	i {
 		color: white;
@@ -52,6 +50,7 @@
 	//margin: 21px;
 	opacity: 1 !important;
 	transform: scale(1) !important;
+	visibility: visible !important;
 }
 
 .lightbox-controls {

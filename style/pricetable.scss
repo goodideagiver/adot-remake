@@ -148,7 +148,7 @@
 	> main {
 		margin: 20px 0;
 		max-width: 1000px;
-		width: 100%;
+		width: fit-content;
 		height: 100%;
 		position: relative;
 		> * {
@@ -171,18 +171,22 @@
 			transition: 0.5s;
 			filter: blur(20px);
 			img {
-				height: 100%;
-				width: 100%;
+				height: fit-content;
+				width: fit-content;
 				object-fit: scale-down;
 				flex-basis: 80%;
 				padding: 10px 0;
 				max-width: 90vw;
+				max-height: 90%;
+				flex-shrink: 1;
 			}
 			div {
 				flex-basis: 20%;
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				width: fit-content;
+				min-width: 300px;
 			}
 		}
 	}

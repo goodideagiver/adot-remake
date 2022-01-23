@@ -35,6 +35,7 @@ function showGallery(image) {
 	gallContainer.classList.toggle('closed');
 	slides[getClickedImageIndex(image)].classList.add('show-img');
 	toggleBodyScroll('off');
+	showAnimation(gallContainer);
 }
 
 function toggleBodyScroll(option) {

@@ -93,4 +93,13 @@ function showPricetablePreview(clickedDiv) {
 	);
 	pricetableContainer.classList.remove('closed');
 	priceDivs[clickedDiv1].classList.add('priceDivVisible');
+	showAnimation(pricetableContainer);
+}
+
+function showAnimation(element) {
+	element.classList.add('close-anim');
+	element.style.transition = '0.5s';
+	setTimeout(() => {
+		element.classList.remove('close-anim');
+	}, 50);
 }

@@ -35,7 +35,7 @@
 			p {
 				&:nth-child(2) {
 					&::before {
-						content: "From: ";
+						content: 'From: ';
 						opacity: 0.5;
 					}
 				}
@@ -63,15 +63,14 @@
 	}
 }
 
-
-@media (max-width:800px) {
-    .pricetable {
-        >div {
-            img {
-                filter: none;
-            }
-        }
-    }
+@media (max-width: 800px) {
+	.pricetable {
+		> div {
+			img {
+				filter: none;
+			}
+		}
+	}
 }
 
 .pricePreview {
@@ -79,9 +78,9 @@
 		content: 'Click anywhere to zoom out';
 		color: white;
 	}
-	overscroll-behavior:none;
+	overscroll-behavior: none;
 	overflow: hidden;
-	cursor:zoom-out !important;
+	cursor: zoom-out !important;
 	position: fixed;
 	gap: 20px;
 	top: 0;
@@ -99,7 +98,7 @@
 	padding: 20px !important;
 	justify-content: center !important;
 	img {
-		aspect-ratio:unset !important;
+		aspect-ratio: unset !important;
 		height: auto !important;
 		flex-grow: 0 !important;
 		width: fit-content !important;
@@ -113,7 +112,7 @@
 		width: fit-content !important;
 		flex-grow: 0 !important;
 		background-color: white !important;
-		padding: 20px!important; 
+		padding: 20px !important;
 		flex-basis: unset !important;
 		min-width: 200px !important;
 		h3 {
@@ -152,7 +151,7 @@
 		width: 100%;
 		height: 100%;
 		position: relative;
-		>* {
+		> * {
 			opacity: 0;
 			transform: scale(0.9);
 			align-items: center;
@@ -178,7 +177,12 @@
 				flex-basis: 80%;
 				padding: 10px 0;
 			}
-			div {flex-basis: 20%; display: flex; align-items: center; justify-content: center;}
+			div {
+				flex-basis: 20%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
 		}
 	}
 }
@@ -190,3 +194,9 @@
 	transform: none !important;
 }
 
+@supports (backdrop-filter: blur(5px)) {
+	.pricePreviewContainer {
+		background-color: rgba(0, 0, 0, 0.769);
+		backdrop-filter: blur(20px);
+	}
+}

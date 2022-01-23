@@ -56,14 +56,18 @@ function galClose() {
 	if (getActiveSlideIndex() < 0) {
 		return;
 	}
+	gallContainer.classList.add('close-anim');
+	toggleBodyScroll('on');
 	gallimg[getActiveSlideIndex()].scrollIntoView({
 		behavior: 'smooth',
 		inline: 'nearest',
 		block: 'center',
 	});
-	slides[getActiveSlideIndex()].classList.remove('show-img');
-	gallContainer.classList.toggle('closed');
-	toggleBodyScroll('on');
+	setTimeout(() => {
+		slides[getActiveSlideIndex()].classList.remove('show-img');
+		gallContainer.classList.toggle('closed');
+		gallContainer.classList.remove('close-anim');
+	}, 500);
 }
 
 function nextSlide() {

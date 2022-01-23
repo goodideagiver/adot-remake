@@ -174,11 +174,14 @@
 				height: fit-content;
 				width: fit-content;
 				object-fit: scale-down;
-				flex-basis: 80%;
-				padding: 10px 0;
+				//flex-basis: 80%;
+				//padding: 10px 0;
 				max-width: 90vw;
 				max-height: 90%;
 				flex-shrink: 1;
+				flex-grow: 0;
+				border: 1px solid white;
+				background-color: white;
 			}
 			div {
 				flex-basis: 20%;

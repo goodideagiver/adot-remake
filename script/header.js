@@ -16,10 +16,9 @@ const imageList = images.map((image, index) => {
 headerContainer.append(galleryContainer);
 
 const nextSlideHeader = () => {
-	const activeSlide = imageList.find(
-		image => !image.classList.contains('image-header-hide')
+	const activeSlideIndex = imageList.indexOf(
+		imageList.find(image => !image.classList.contains('image-header-hide'))
 	);
-	const activeSlideIndex = imageList.indexOf(activeSlide);
 	const nextSlideIndex =
 		activeSlideIndex === imageList.length - 1 ? 0 : activeSlideIndex + 1;
 	imageList[activeSlideIndex].classList.add('image-header-hide');

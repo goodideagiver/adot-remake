@@ -148,7 +148,7 @@
 	> main {
 		margin: 20px 0;
 		max-width: 1000px;
-		width: fit-content;
+		width: 100%;
 		height: 100%;
 		position: relative;
 		> * {
@@ -172,11 +172,11 @@
 			filter: blur(20px);
 			img {
 				height: fit-content;
-				width: fit-content;
-				object-fit: scale-down;
+				// width: fit-content;
+				// object-fit: scale-down;
 				//flex-basis: 80%;
 				//padding: 10px 0;
-				max-width: 90vw;
+				max-width: 90%;
 				max-height: 90%;
 				flex-shrink: 1;
 				flex-grow: 0;

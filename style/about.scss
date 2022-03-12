@@ -5,6 +5,7 @@
 		//max-height: 70vh;
 		object-fit: cover;
 		opacity: 0.8;
+		transform: scale(1.1);
 		//filter: grayscale(1) contrast(1.5);
 	}
 	border: var(--line);
@@ -16,6 +17,7 @@
 	max-width: 1500px;
 	//background: linear-gradient(#ff5e7c6b, #c272d44d);
 	> div {
+		overflow: hidden;
 		flex-grow: 1;
 		min-width: 300px;
 		max-height: 70vh;

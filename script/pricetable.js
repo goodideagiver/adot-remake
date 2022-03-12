@@ -20,35 +20,30 @@ pricetableContainer.innerHTML = `
     </div>
 `;
 document.querySelector('body > main').appendChild(pricetableContainer);
-pricetableContainer.addEventListener('click', () => {
-	if (event.target === pricetableContainer) {
+pricetableContainer.addEventListener('click', event => {
+	if (
+		event.target === pricetableContainer ||
+		event.target.className === 'priceDivVisible'
+	) {
 		closePricetablePreview();
 	}
 });
 
 function copyPricetableInfo() {
 	infoPricetable = document.createElement('main');
-	pricetableItems.forEach((priceDiv) => {
+	pricetableItems.forEach(priceDiv => {
 		infoPricetable.appendChild(priceDiv.cloneNode(true));
 		priceDiv.addEventListener('click', showPricetablePreview);
 	});
-	infoPricetable.querySelectorAll('p').forEach((element) => {
+	infoPricetable.querySelectorAll('p').forEach(element => {
 		element.remove();
 	});
 	return infoPricetable.innerHTML;
 }
-const priceDivs = document.querySelectorAll(
-	'.pricePreviewContainer main > div'
-);
-document
-	.getElementById('priceX')
-	.addEventListener('click', closePricetablePreview);
-document
-	.getElementById('priceLeft')
-	.addEventListener('click', prevPricetableItem);
-document
-	.getElementById('priceRight')
-	.addEventListener('click', nextPricetableItem);
+const priceDivs = document.querySelectorAll('.pricePreviewContainer main > div');
+document.getElementById('priceX').addEventListener('click', closePricetablePreview);
+document.getElementById('priceLeft').addEventListener('click', prevPricetableItem);
+document.getElementById('priceRight').addEventListener('click', nextPricetableItem);
 
 function nextPricetableItem() {
 	let active = getActivePricetableDiv();
@@ -79,18 +74,12 @@ function closePricetablePreview() {
 }
 
 function getActivePricetableDiv() {
-	return getArrayItemIndex(
-		priceDivs,
-		document.querySelector('.priceDivVisible')
-	);
+	return getArrayItemIndex(priceDivs, document.querySelector('.priceDivVisible'));
 }
 
 function showPricetablePreview(clickedDiv) {
 	toggleBodyScroll('off');
-	let clickedDiv1 = getArrayItemIndex(
-		pricetableItems,
-		clickedDiv.currentTarget
-	);
+	let clickedDiv1 = getArrayItemIndex(pricetableItems, clickedDiv.currentTarget);
 	pricetableContainer.classList.remove('closed');
 	priceDivs[clickedDiv1].classList.add('priceDivVisible');
 	showAnimation(pricetableContainer);

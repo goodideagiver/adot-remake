@@ -27,4 +27,4 @@ const nextSlideHeader = () => {
 
 setInterval(() => {
 	nextSlideHeader();
-}, 10000);
+}, 8000);

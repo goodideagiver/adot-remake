@@ -3,6 +3,7 @@
 		width: 100%;
 		height: 100%;
 		position: relative;
+
 		.image-header-container {
 			transition: 3s;
 			width: 100%;
@@ -11,15 +12,21 @@
 			position: absolute;
 			animation: 20s image-slide infinite;
 			img {
+				transition: 3s;
 				opacity: 0.3;
 				width: 100%;
 			}
 		}
 		.image-header-hide {
 			opacity: 0;
+			img {
+				transform: scale(1.5);
+				filter: blur(5px);
+			}
 		}
 	}
 	.header-info {
+		transition: 1s;
 		position: absolute;
 		z-index: 1;
 	}
